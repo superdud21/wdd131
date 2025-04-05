@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokyo, Japan</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Japan</h1>
+  </header>
+  <main>
+    <section class="hero">
+      <img 
+        src="images/japan-large.webp"
+        srcset="images/japan-small.webp 767w, images/japan-large.webp 1200w"
+        sizes="(max-width: 767px) 100vw, 1200px"
+        alt="Tokyo cityscape"
+      >
+      <div class="overlay data">
+        <div class="card-header">Data</div>
+        <ul>
+          <li><strong>Area:</strong> 377,973 sq km</li>
+          <li><strong>Population:</strong> 124.5 million</li>
+          <li><strong>Capital:</strong> Tokyo</li>
+          <li><strong>Language:</strong> Japanese</li>
+          <li><strong>Currency:</strong> Yen (¥)</li>
+          <li><strong>Calling Code:</strong> +81</li>
+          <li><strong>Time Zone:</strong> JST</li>
+          <li><strong>Continent:</strong> Asia</li>
+          <li><strong>Internet TLD:</strong> .jp</li>
+        </ul>
+      </div>
+      <div class="overlay weather">
+        <div class="card-header">
+          Weather
+          <img src="images/cold-weather.svg" alt="Weather icon" class="mobile-weather-icon">
+        </div>
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp">40°F</span></li>
+          <li><strong>Wind Speed:</strong> <span id="windSpeed">10 mph</span></li>
+          <li><strong>Wind Chill:</strong> <span id="windChill">33.6°F</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> | Caleb Cameron | Japan</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
