@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4a5568;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #menu {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #2d3748;
+    padding: 0.5rem;
+  }
+  
+  nav.show {
+    display: flex;
+  }
+  
+  nav a {
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  #temples-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .temple-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #f7fafc;
+  }
+  
+  .temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
