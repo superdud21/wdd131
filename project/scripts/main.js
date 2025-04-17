@@ -11,3 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     navDropdown.classList.remove("open");
   });
 });
+
+const visitKey = "visitCount";
+let visitCount = Number(localStorage.getItem(visitKey)) || 0;
+visitCount++;
+localStorage.setItem(visitKey, visitCount);
+
+const visitDisplay = document.getElementById("visitCount");
+if (visitDisplay) {
+  visitDisplay.textContent = visitCount;
+}
