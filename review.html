@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Cameron | W05 Product Review Page">
+  <meta name="author" content="Caleb Cameron">
+  <title>Product Review Confirmation</title>
+  <link rel="stylesheet" href="styles/review.css">
+  <script src="scripts/getDates.js" defer></script>
+
+  <title>Review Submitted</title>
+</head>
+<body>
+    <main>
+      <div class="card">
+        <h1>Thank You!</h1>
+        <p>Your review has been submitted successfully.</p>
+        <p>You have submitted <span id="counter">0</span> reviews.</p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> | Caleb Cameron | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+    <script>
+      const count = localStorage.getItem("reviewCount") || 0;
+      const newCount = parseInt(count) + 1;
+      localStorage.setItem("reviewCount", newCount);
+      document.getElementById("counter").textContent = newCount;
+    </script>
+  </body>
+  
